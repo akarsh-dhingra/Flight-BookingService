@@ -1,6 +1,6 @@
 'use strict';
 import { Model } from "sequelize";
-import { Enums } from '../utils/common/index.js';
+import Enums from '../utils/common/enums.js';
 const { BOOKED, CANCELLED, INITIATED, PENDING } = Enums.BOOKING_STATUS;
 export default (sequelize, DataTypes) => {
   
@@ -48,3 +48,5 @@ export default (sequelize, DataTypes) => {
   });
   return Booking;
 };
+
+// rm -rf .git sa you can remove init from any file that you've initialised
